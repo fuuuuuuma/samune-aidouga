@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0",
+  "channel_id": null,
+  "channel_name": null,
+  "canonical_url": null,
+  "status": "draft",
+  "last_analyzed_at": null,
+  "collection_run_id": null,
+  "evidence": {
+    "enumerated_count": null,
+    "saved_count": null,
+    "inspected_count": null,
+    "reviewed_sheet_pages": [],
+    "observation_file": null,
+    "limitations": [],
+    "reference_video_ids": []
+  },
+  "target": {
+    "audience": null,
+    "content_type": "videos",
+    "series": null,
+    "audience_basis": "user-provided or explicit channel description"
+  },
+  "observed_patterns": [],
+  "production_defaults": {
+    "canvas": [
+      1280,
+      720
+    ],
+    "layout_id": null,
+    "main_subject": null,
+    "subject_box": null,
+    "text_boxes": [],
+    "palette": [],
+    "font_style": null,
+    "text_aspect": "natural",
+    "text_lines": "variable",
+    "strokes": [],
+    "shadows": [],
+    "backplates": [],
+    "background": null,
+    "whitespace": null,
+    "decoration": null,
+    "timecode_safe_zone": [
+      1040,
+      610,
+      240,
+      110
+    ]
+  },
+  "series_overrides": [],
+  "avoid": [],
+  "approved_rules": [],
+  "rule_item_format": {
+    "rule": "具体的な制作初期値",
+    "basis": "observed / user_instruction / proposed",
+    "evidence_video_ids": [],
+    "scope": "channel / series / project",
+    "confidence": "high / medium / low"
+  },
+  "revision_history": []
+}

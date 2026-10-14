@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "batch": "../../batch.json",
+  "variant_id": "A",
+  "attempt": 1,
+  "visual_evidence": null,
+  "constraints": {
+    "preserve_identity": false,
+    "preserve_layout": true,
+    "exact_text": true,
+    "genuine_logo": true,
+    "unchanged_elsewhere": false
+  },
+  "images": [],
+  "mask": null,
+  "isolated_hand_fix": false,
+  "protected_region_note": null,
+  "previous_receipt": null,
+  "previous_qc": null,
+  "override_model": null,
+  "size": "1280x720",
+  "quality": "high"
+}

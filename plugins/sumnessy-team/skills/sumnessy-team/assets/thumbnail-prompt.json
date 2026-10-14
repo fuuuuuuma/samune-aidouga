@@ -1,0 +1,99 @@
+{
+  "task": "create_youtube_thumbnail",
+  "batch_context": {
+    "request_id": null,
+    "phase": "initial",
+    "variant_id": null
+  },
+  "asset_ids": [],
+  "channel_context": {
+    "channel_id": null,
+    "profile_path": null,
+    "series": null,
+    "reference_video_ids": []
+  },
+  "canvas": {
+    "width": 3840,
+    "height": 2160,
+    "aspect_ratio": "16:9"
+  },
+  "intent": null,
+  "references": [],
+  "text_lock": [],
+  "layout": {
+    "layout_id": null,
+    "elements": [],
+    "timecode_safe_zone": [
+      3120,
+      1830,
+      720,
+      330
+    ],
+    "slash_support_alignment": {
+      "text_align": "left",
+      "block_anchor": "left margin",
+      "centered_block": false
+    }
+  },
+  "typography": {
+    "render_text": true
+  },
+  "text_aspect_lock": {
+    "basis": "selected font or approved image",
+    "scale": "uniform",
+    "priority": "preserve glyph shape over filling line width",
+    "forbid": [
+      "horizontal stretching to fill width",
+      "vertical squashing",
+      "reapplying aspect changes on every revision"
+    ]
+  },
+  "typography_style_lock": {
+    "reference_image": null,
+    "font_shape": null,
+    "weight": null,
+    "fills_and_gradients": [],
+    "texture": null,
+    "strokes": [],
+    "shadows": [],
+    "backplates_and_underlines": [],
+    "tracking_and_block_gaps": [],
+    "boxes_and_scale_ratios": [],
+    "immutable": false
+  },
+  "person_identity": {
+    "mode": "preserve original reference",
+    "primary_reference": null,
+    "allowed_changes": [],
+    "protected_traits": []
+  },
+  "change_only": [],
+  "preserve_exactly": [],
+  "forbidden_drift": [
+    "extra text",
+    "substituted person",
+    "fake logo",
+    "unrequested typography change"
+  ],
+  "output": {
+    "count": 1,
+    "format": "single finished thumbnail; no alternative design contact sheet",
+    "quality": "high"
+  },
+  "preflight": {
+    "existing_feedback_checked": false,
+    "dedicated_person_photos_checked": false,
+    "person_photo_result": null,
+    "background_selection_checked": false
+  },
+  "background_selection": {
+    "record_path": null,
+    "action": null,
+    "asset_id": null,
+    "source_path": null,
+    "sha256": null,
+    "reason": null,
+    "transforms": {},
+    "preserve_on_revision": true
+  }
+}

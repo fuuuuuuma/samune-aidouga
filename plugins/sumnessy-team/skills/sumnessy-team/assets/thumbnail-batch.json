@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "request_id": null,
+  "phase": "initial",
+  "contract": "request_contract.json",
+  "review_dir": "reference_review",
+  "count_override": null,
+  "revision": null,
+  "max_bytes": 2000000,
+  "variants": [
+    {
+      "id": "A",
+      "intent": null,
+      "prompt": "initial/A/prompt.json",
+      "original": "initial/A/original.png",
+      "image": "initial/A/delivery.jpg",
+      "image_sha256": null,
+      "qc_file": "initial/A/qc.md",
+      "checked_at": null,
+      "qc_checks": {},
+      "routing_job": "initial/A/routing-job.json",
+      "model_receipt": null
+    },
+    {
+      "id": "B",
+      "intent": null,
+      "prompt": "initial/B/prompt.json",
+      "original": "initial/B/original.png",
+      "image": "initial/B/delivery.jpg",
+      "image_sha256": null,
+      "qc_file": "initial/B/qc.md",
+      "checked_at": null,
+      "qc_checks": {},
+      "routing_job": "initial/B/routing-job.json",
+      "model_receipt": null
+    },
+    {
+      "id": "C",
+      "intent": null,
+      "prompt": "initial/C/prompt.json",
+      "original": "initial/C/original.png",
+      "image": "initial/C/delivery.jpg",
+      "image_sha256": null,
+      "qc_file": "initial/C/qc.md",
+      "checked_at": null,
+      "qc_checks": {},
+      "routing_job": "initial/C/routing-job.json",
+      "model_receipt": null
+    }
+  ],
+  "backend": null
+}

@@ -1,0 +1,17 @@
+{
+  "channel_id": null,
+  "phase": "initial",
+  "background_change_requested": false,
+  "base_mode": "library",
+  "role": "base",
+  "query": "",
+  "concepts": [],
+  "required_terms": [],
+  "palette": [],
+  "avoid": [],
+  "text_regions": [],
+  "face_regions": [],
+  "existing_background": null,
+  "provided_reference": null,
+  "exclude_hashes": []
+}
