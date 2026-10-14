@@ -1,15 +1,15 @@
-# sumnessy-team — Codex Plugin
+# samune-aidouga — Codex Plugin
 
 ラフ画像、支給素材、チャンネル別の参考資料をもとに、YouTubeサムネイルの構成・制作・修正・QCを支援するCodexプラグインです。初回はA/B/Cの3案、修正時はR1/R2の2案を独立画像として作るワークフローを提供します。
 
 ## Install
 
 ```bash
-codex plugin marketplace add fuuuuuuma/sumnessy-team
-codex plugin add sumnessy-team@sumnessy-team
+codex plugin marketplace add fuuuuuuma/samune-aidouga
+codex plugin add samune-aidouga@samune-aidouga
 ```
 
-インストール後、新しいCodexチャットで `$sumnessy-team` と依頼内容、ラフ、支給素材を指定してください。導入状況は `codex plugin marketplace list` と `codex plugin list` で確認できます。
+インストール後、新しいCodexチャットで `$samune-aidouga` と依頼内容、ラフ、支給素材を指定してください。導入状況は `codex plugin marketplace list` と `codex plugin list` で確認できます。
 
 ## 必要な環境
 

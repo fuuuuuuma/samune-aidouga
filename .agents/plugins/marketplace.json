@@ -1,14 +1,14 @@
 {
-  "name": "sumnessy-team",
+  "name": "samune-aidouga",
   "interface": {
-    "displayName": "sumnessy-team サムネイル制作"
+    "displayName": "samune-aidouga サムネイル制作"
   },
   "plugins": [
     {
-      "name": "sumnessy-team",
+      "name": "samune-aidouga",
       "source": {
         "source": "local",
-        "path": "./plugins/sumnessy-team"
+        "path": "./plugins/samune-aidouga"
       },
       "policy": {
         "installation": "AVAILABLE",
