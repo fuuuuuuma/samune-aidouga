@@ -260,9 +260,10 @@ def collect_locked(args, root):
     def receive(e, tab, rank):
         vid = e['id']
         old = rows.get(vid, {})
-        membership = sorted(set(old.get('tabs', [])) | {tab})
+        membership = sorted(set(old.get('tabs', [])) | ({tab} if tab else set()))
         ranks = dict(old.get('rank_in_tab', {}))
-        ranks[tab] = rank
+        if tab:
+            ranks[tab] = rank
         rows[vid] = {**old, 'video_id': vid, 'channel_id': args.channel_id,
                      'video_url': f'https://www.youtube.com/watch?v={vid}',
                      'title': e.get('title') or '', 'tabs': membership, 'rank_in_tab': ranks,
@@ -285,6 +286,12 @@ def collect_locked(args, root):
             if run['tabs'][tab]['status'] == 'error':
                 # Preserve previous tabs; do not hammer the site after a failure.
                 break
+        reference = getattr(args, 'reference_entry', None)
+        if reference and VIDEO_RE.fullmatch(reference.get('id') or ''):
+            # The URL resolver verified its owner; include an older shared video as well.
+            if rows.get(reference['id'], {}).get('last_seen_run') != run_id:
+                receive(reference, None, None)
+            rows[reference['id']]['explicit_reference'] = True
         fetcher = Fetcher(args.interval)
         pending = [r for r in rows.values() if r.get('last_seen_run') == run_id]
         for index, row in enumerate(pending, 1):
@@ -337,7 +344,7 @@ def main():
     p.add_argument('--source-url', default='')
     p.add_argument('--out-dir', type=Path, required=True, help='Workspace channels folder; data stored below its UC ID')
     p.add_argument('--tabs', nargs='+', choices=TABS, default=list(TABS))
-    p.add_argument('--limit', type=int, default=0, help='Test only: entries per tab. 0 means no deliberate cap')
+    p.add_argument('--limit', type=int, default=0, help='Entries per tab. 0 means no deliberate cap')
     p.add_argument('--interval', type=float, default=1.0, help='Minimum interval for metadata and thumbnail requests')
     p.add_argument('--refresh', action='store_true', help='Recheck existing thumbnails, retaining previous image versions')
     args = p.parse_args()

@@ -1,14 +1,14 @@
 {
   "name": "samune-aidouga",
-  "version": "0.1.0",
-  "description": "ラフ・支給素材・チャンネル別参考に沿って、YouTubeサムネイルを制作・修正・検査する。",
+  "version": "0.3.0",
+  "description": "YouTube URLからサムネの作風を学習して記憶。次回からURL不要で制作・修正。",
   "author": {
     "name": "fuuuuuuma"
   },
   "skills": "./skills/",
   "interface": {
     "displayName": "samune-aidouga サムネイル制作",
-    "shortDescription": "チャンネル参考を活かしたサムネイル制作と修正",
+    "shortDescription": "YouTubeから作風を記憶し、次回も使えるサムネイル制作",
     "developerName": "fuuuuuuma",
     "category": "Creative",
     "capabilities": [],

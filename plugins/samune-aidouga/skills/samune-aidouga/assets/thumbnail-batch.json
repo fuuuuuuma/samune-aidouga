@@ -17,9 +17,7 @@
       "image_sha256": null,
       "qc_file": "initial/A/qc.md",
       "checked_at": null,
-      "qc_checks": {},
-      "routing_job": "initial/A/routing-job.json",
-      "model_receipt": null
+      "qc_checks": {}
     },
     {
       "id": "B",
@@ -30,9 +28,7 @@
       "image_sha256": null,
       "qc_file": "initial/B/qc.md",
       "checked_at": null,
-      "qc_checks": {},
-      "routing_job": "initial/B/routing-job.json",
-      "model_receipt": null
+      "qc_checks": {}
     },
     {
       "id": "C",
@@ -43,10 +39,7 @@
       "image_sha256": null,
       "qc_file": "initial/C/qc.md",
       "checked_at": null,
-      "qc_checks": {},
-      "routing_job": "initial/C/routing-job.json",
-      "model_receipt": null
+      "qc_checks": {}
     }
-  ],
-  "backend": null
+  ]
 }

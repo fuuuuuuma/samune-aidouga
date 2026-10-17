@@ -10,7 +10,8 @@
     "channel_id": null,
     "profile_path": null,
     "series": null,
-    "reference_video_ids": []
+    "reference_video_ids": [],
+    "style_source_channel_id": null
   },
   "canvas": {
     "width": 3840,
@@ -28,12 +29,7 @@
       1830,
       720,
       330
-    ],
-    "slash_support_alignment": {
-      "text_align": "left",
-      "block_anchor": "left margin",
-      "centered_block": false
-    }
+    ]
   },
   "typography": {
     "render_text": true

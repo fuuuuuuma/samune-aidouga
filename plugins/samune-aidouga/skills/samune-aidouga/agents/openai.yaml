@@ -1,4 +1,4 @@
 interface:
-  display_name: "サムネイル作成"
-  short_description: "ラフと支給素材から初回3案・修正2案。全参考とPSDを確認し、固定条件を守るサムネ制作"
-  default_prompt: "$samune-aidouga ラフと支給素材、過去の修正指示、登録参考画像を確認し、このチャンネルのサムネを初回3案で作ってください。修正依頼では2案を提出してください。"
+  display_name: "YouTubeの作風を覚えるサムネイル制作"
+  short_description: "YouTube URLから作風を学習して保存。次回からURL不要でサムネイルを制作・修正"
+  default_prompt: "$samune-aidouga 指定したYouTube URLの作風を覚えてください。登録済みなら保存した作風でサムネイルを作ってください。"

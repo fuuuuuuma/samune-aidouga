@@ -142,8 +142,6 @@ def validate(batch_path, stage):
     for variant in variants:
         name = str(variant.get("id"))
         check(bool(variant.get("intent")), f"{name}: design intent required")
-        if batch.get("backend") == "openai_api":
-            file_at(variant.get("routing_job"), f"{name} routing job")
         path = file_at(variant.get("prompt"), f"{name} prompt")
         if path is None:
             continue
@@ -170,23 +168,6 @@ def validate(batch_path, stage):
         if stage == "plan":
             continue
         original_path = file_at(variant.get("original"), f"{name} original")
-        if batch.get("backend") == "openai_api":
-            receipt_path = file_at(variant.get("model_receipt"), f"{name} model receipt")
-            if receipt_path:
-                receipt = read_json(receipt_path)
-                check(receipt.get("state") == "succeeded" and receipt.get("backend") == "openai_api",
-                      f"{name}: API request was not successful")
-                check(receipt.get("requested_model") in ("gpt-image-2.5-flare", "gpt-image-2.5-sunburst"),
-                      f"{name}: supported model was not recorded")
-                check(receipt.get("variant_id") == name and receipt.get("request_id") == batch.get("request_id")
-                      and receipt.get("phase") == phase and receipt.get("n") == 1,
-                      f"{name}: model receipt belongs to a different request")
-                check(receipt.get("prompt_sha256") == digest(path), f"{name}: prompt changed after API request")
-                if original_path:
-                    check(receipt.get("output_sha256") == digest(original_path), f"{name}: original differs from API output")
-                job_path = file_at(variant.get("routing_job"), f"{name} routing job")
-                if job_path:
-                    check(receipt.get("job_sha256") == digest(job_path), f"{name}: routing job changed after API request")
         qc_file = file_at(variant.get("qc_file"), f"{name} QC record")
         if qc_file:
             check(bool(qc_file.read_text().strip()), f"{name}: empty QC record")

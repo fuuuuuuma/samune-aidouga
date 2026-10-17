@@ -8,3 +8,8 @@ __pycache__/
 outputs/
 data/
 DATA_ROOT/
+channels/
+raw/
+registry.json
+profile_history/
+runtime/
